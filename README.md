@@ -2,7 +2,7 @@
 
 This site contains a collection of tools that I built to assist in making informed bets on sporting events.
 
-## List of Tools
+## Tools
 * [Odds Converter](#odds-converter)
 * [Information Aggregator](#information-aggregator)
 * [Bet Tracker](#bet-tracker)
@@ -15,12 +15,12 @@ I like to use decimal odds, but most sports books use American odds. It's nice f
 
 ### Information Aggregator
 
-Utilizes XHR to make http requests to multiple websites and compiles them into one concise web page.
+Will utilize XHR to make http requests to multiple websites and compile them into one concise web page.
 
 
 ### Bet Tracker
 
-Able to parse images of screenshots that I provide to keep track of the bets I make. Over time it will create a filterable list various time periods to visualize graphs of my performance over time.
+Will be able to parse images of screenshots that I provide to keep track of the bets I make. Over time it will create a filterable list various time periods to visualize graphs of my performance over time.
 
 Filters:
 * Bet Type (Prop vs. not prop?) (Spread, total, prop, etc.)
