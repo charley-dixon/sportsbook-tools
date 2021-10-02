@@ -17,6 +17,9 @@ I like to use decimal odds, but most sports books use American odds. It's nice f
 
 Will utilize XHR to make http requests to multiple websites and compile them into one concise web page.
 
+Websites:
+* Weather for weather at the location of the game
+
 
 ### Bet Tracker
 
