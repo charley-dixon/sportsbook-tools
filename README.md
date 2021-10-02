@@ -1,4 +1,4 @@
-# Sportsbook Tools
+# The House Always Wins
 
 This site contains a collection of tools that I built to assist in making informed bets on sporting events. The tools on their own are useful, but together they create a framework for researching a matchup thoroughly. They are intended to be navigated sequentially like so:
 1. Identify a matchup that may contain good betting opportunities
@@ -7,7 +7,8 @@ This site contains a collection of tools that I built to assist in making inform
 4. Log your results
 5. Learn from your mistakes
 
-<!-- Record a video explaining how you might analyze a game using these tools -->
+<!-- Ideas -->
+<!-- PODCAST/YOUTUBE SERIES ("The House Always Wins"): Record a video explaining how you analyze a game using this framework. Create a podcast that walks through your reasoning for a specific game (similar to the video above), and talks about the lessons learned. The podcast is essentially step 5 (learning from your mistakes) It would be released once a week, the day of NFL games where you start by recapping the results and lessons from the week prior and then also make predictions about the slate of games for that day. The angle that you want to go for here is that you are by no means an expert, but you are using the scientific method and some great tools to make informed decisions; the goal is to get better over time, so do not be discouraged if your early results are poor. -->
 
 ## Tools
 * [Odds Converter](#odds-converter)
@@ -49,11 +50,12 @@ Will utilize XHR to make http requests to multiple websites and compile them int
 Websites:
 * Weather for weather at the location of the game
 * Injuries
+* Storylines
 
 
 ### Bet Tracker
 
-Will be able to parse images of screenshots that I provide to keep track of the bets I make. Over time it will create a filterable list various time periods to visualize graphs of my performance over time.
+Will be able to parse images of screenshots that I provide to keep track of the bets I make. Over time it will create a filterable list various time periods to visualize graphs of my performance over time. I want to display my record dynamically on the site shamelessly for all to see, but also dynamically share my trends based on sport, last 10 bets, etc.
 
 Filters:
 * Bet Type (Prop vs. not prop?) (Spread, total, prop, etc.)
