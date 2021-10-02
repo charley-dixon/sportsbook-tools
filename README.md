@@ -6,6 +6,7 @@ This site contains a collection of tools that I built to assist in making inform
 * [Odds Converter](#odds-converter)
 * [Information Aggregator](#information-aggregator)
 * [Bet Tracker](#bet-tracker)
+* [Two Game Theory](#two-game-theory)
 
 
 ### Odds Converter
@@ -31,6 +32,11 @@ Filters:
 * Sport (NFL, NBA, NCAAF, etc.)
 * Unit (hidden from public view)
 * Result of Bet (W/L/Push)
+
+
+### Two Game Theory
+
+In any football game there are really two games happening at once - Team A's offense versus Team B's defense, and Team B's offense versus Team A's defense. You must account for other factors such as special teams, coaching, weather, etc., but the two game theory provides a starting point in trying to determine what the spread and total of a game will be.
 
 
 ### Lessons Learned
