@@ -1,0 +1,27 @@
+html {
+  font-family: Georgia;
+}
+
+body {
+  display: flex;
+  /* width: 100%; */
+  margin: 0 auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  align-items: center;
+  border: 1px solid black;
+  padding: 2rem;
+}
+
+input {
+  padding: 2rem;
+}
+
+output {
+  padding: 2rem;
+  border: 1px solid black;
+}

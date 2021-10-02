@@ -7,9 +7,28 @@
     <script src="./js/odds-converter.js" defer></script>
   </head>
   <body>
+    <div class="box amount">
+      <h3>Bet Amount</h3>
+      <input type="text" name="unit" placeholder="Enter here (optional)">
+    </div>
     <!-- Dropdown of various odds, the default being American -->
+    <div class="box convert">
+      <h3>Convert</h3>
+      <select name="convert">
+        <option value="american">American</option>
+        <option value="decimal">Decimal</option>
+      </select>
+      <input type="text" name="odds" placeholder="Starting Odds">
+    </div>
+
     <!-- Second dropdown, defaulted to Decimal -->
-    <!-- Input for unit -->
-    <!-- Output for winnings, broken down by total payout, profit, and ROI -->
+    <div class="box to">
+      <h3>To</h3>
+      <select class="to" name="to">
+        <option value="decimal">Decimal</option>
+        <option value="american">American</option>
+      </select>
+      <output name="result" for=""></output>
+    </div>
   </body>
 </html>
