@@ -1,4 +1,4 @@
-# Sports Betting Tools
+# Sportsbook Tools
 
 This site contains a collection of tools that I built to assist in making informed bets on sporting events.
 
