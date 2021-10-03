@@ -85,6 +85,15 @@ td {
   text-align: center;
 }
 
+#message {
+  color: white;
+  text-align: center;
+  padding: 2rem;
+  border: 1px solid white;
+  width: 50%;
+  margin: 4rem auto;
+}
+
 #export {
   width: 40%;
   margin: 1rem auto;

@@ -4,26 +4,15 @@ const oddsTo = document.getElementById('to');
 const odds = document.getElementById('odds');
 const convert = document.getElementById('convert');
 const body = document.querySelector('body');
+const outputs = document.getElementById('outputs');
 const table = document.querySelector('tbody');
+const message = document.getElementById('message');
+const resetMessage = message; // making a copy of message to reinsert when the reset functionality goes off
 const reset = document.getElementById('reset');
 let unit;
 let result;
 let winnings;
 let payout;
-
-
-// convert.addEventListener('click', function(event) {
-//   event.preventDefault();
-//   if(oddsFrom.value === 'american' && oddsTo.value === 'decimal') {
-//     result.textContent = a2d(Number(odds.value));
-//   } else if(oddsFrom.value === 'decimal' && oddsTo.value === 'american') {
-//     result.textContent = d2a(Number(odds.value));
-//   } else if(oddsFrom.value === oddsTo.value) {
-//     result.textContent = odds.value;
-//   }
-//   let winnings = Number(betAmount.value) * (a2d(odds.value) - 1);
-//   let payout = winnings + Number(betAmount.value);
-// });
 
 convert.addEventListener('click', function(event) {
   // check the selection fields and convert odds accordingly
@@ -43,9 +32,14 @@ convert.addEventListener('click', function(event) {
     }
   }
 
+  // remove the message that displays to users before any entries are submitted
+  message.remove();
+
+  // set the value for these fields upon the click
   unit = Number(betAmount.value);
   payout = winnings + unit;
 
+  // create array of the new data entries
   let entry = [unit.toFixed(2), result, winnings.toFixed(2), payout.toFixed(2)];
 
   // insert row at end of table
@@ -60,6 +54,7 @@ convert.addEventListener('click', function(event) {
 
 // reset functionality
 reset.addEventListener('click', function() {
+  outputs.appendChild(resetMessage);
   table.innerHTML = '';
   odds.value = '';
   betAmount.value = '';

@@ -29,7 +29,7 @@
       </div>
 
       <!-- HTML table that stores results dynamically -->
-      <div class="outputs">
+      <div class="outputs" id="outputs">
         <table>
           <thead>
             <tr>
@@ -43,9 +43,13 @@
             <!-- JS will create a new row for each submission -->
           </tbody>
         </table>
-        <input type="submit" name="reset" value="Reset" id="reset">
-        <input type="submit" name="export" value="Export" id="export">
+        <div id="message">
+          <h2>Entries</h2>
+          <p>Any odds conversions that are submitted will populate this table. It may be a bit unnecessary but I wanted to build something that would allow me to practice my HTML tables. The converted odds will be in the 'Odds' column.</p>
+        </div>
       </div>
     </main>
+    <input type="submit" name="reset" value="Reset" id="reset">
+    <input type="submit" name="export" value="Export" id="export">
   </body>
 </html>
