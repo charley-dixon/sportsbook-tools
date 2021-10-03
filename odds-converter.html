@@ -7,28 +7,45 @@
     <script src="./js/odds-converter.js" defer></script>
   </head>
   <body>
-    <div class="box amount">
-      <h3>Bet Amount</h3>
-      <input type="text" name="unit" placeholder="Enter here (optional)">
-    </div>
-    <!-- Dropdown of various odds, the default being American -->
-    <div class="box convert">
-      <h3>Convert</h3>
-      <select name="convert">
-        <option value="american">American</option>
-        <option value="decimal">Decimal</option>
-      </select>
-      <input type="text" name="odds" placeholder="Starting Odds">
-    </div>
+    <h1>Odds Conversion Center</h1>
+    <main>
+      <div class="inputs">
+        <h2>Odds Calculator</h2>
+        <label for="betAmount">Bet Amount</label>
+        <input id="betAmount" type="text" name="unit">
+        <label for="from">Convert From</label>
+        <select name="from" id="from">
+          <option value="american">American</option>
+          <option value="decimal">Decimal</option>
+        </select>
+        <label for="to">Convert To</label>
+        <select name="to" id="to">
+          <option value="decimal">Decimal</option>
+          <option value="american">American</option>
+        </select>
+        <label for="odds">Odds</label>
+        <input type="text" name="odds" id="odds">
+        <input type="submit" id="convert" value="Submit">
+      </div>
 
-    <!-- Second dropdown, defaulted to Decimal -->
-    <div class="box to">
-      <h3>To</h3>
-      <select class="to" name="to">
-        <option value="decimal">Decimal</option>
-        <option value="american">American</option>
-      </select>
-      <output name="result" for=""></output>
-    </div>
+      <!-- HTML table that stores results dynamically -->
+      <div class="outputs">
+        <table>
+          <thead>
+            <tr>
+              <th>Unit</th>
+              <th>Odds</th>
+              <th>Profit</th>
+              <th>Payout</th>
+            </tr>
+          </thead>
+          <tbody>
+            <!-- JS will create a new row for each submission -->
+          </tbody>
+        </table>
+        <input type="submit" name="reset" value="Reset" id="reset">
+        <input type="submit" name="export" value="Export" id="export">
+      </div>
+    </main>
   </body>
 </html>

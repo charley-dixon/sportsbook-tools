@@ -8,7 +8,7 @@ This site contains a collection of tools that I built to assist in making inform
 5. Learn from your mistakes
 
 <!-- Ideas -->
-<!-- PODCAST/YOUTUBE SERIES ("The House Always Wins"): Record a video explaining how you analyze a game using this framework. Create a podcast that walks through your reasoning for a specific game (similar to the video above), and talks about the lessons learned. The podcast is essentially step 5 (learning from your mistakes) It would be released once a week, the day of NFL games where you start by recapping the results and lessons from the week prior and then also make predictions about the slate of games for that day. The angle that you want to go for here is that you are by no means an expert, but you are using the scientific method and some great tools to make informed decisions; the goal is to get better over time, so do not be discouraged if your early results are poor. -->
+<!-- PODCAST/YOUTUBE SERIES ("The House Always Wins"): Record a video explaining how you analyze a game using this framework. Create a podcast that walks through your reasoning for a specific game (similar to the video above), and talks about the lessons learned. The podcast is essentially step 5 (learning from your mistakes) It would be released once a week, the day of NFL games where you start by recapping the results and lessons from the week prior and then also make predictions about the slate of games for that day. So should this be successful, I'm thinking that my Saturday nights will turn into football research nights and podcast recording. The angle that you want to go for here is that you are by no means an expert, but you are using the scientific method and some great tools to make informed decisions; the goal is to get better over time, so do not be discouraged if your early results are poor. -->
 
 ## Tools
 * [Odds Converter](#odds-converter)
@@ -20,12 +20,12 @@ This site contains a collection of tools that I built to assist in making inform
 
 ### Odds Converter
 
-I like to use decimal odds, but most sports books use American odds. It's nice for me to have a quick way to flip back and forth between the two.
+I like to use decimal odds, but most sports books use American odds. It's nice for me to have a quick way to flip back and forth between the two. This tool will allow you to store multiple odds into an HTML table and export it to a CSV file.
 
 
 ### Pros vs. Joes
 
-Shows what percentages of money is bet on which teams. This is a good starting place when determining which games you want to bet on in the first place. This tool will filter by sport and display games that are happening on that current day or week (in the case of the NFL) along with the percentages of how much money is bet on each side. Games that have a large amount of money on one side means that the public is heavily backing one side, and thus the lines will likely have to move for the sportsbooks to hedge their bets. If the line moves, there is likely opportunity for you to beat the sportsbooks at their own game.
+Shows what percentages of money is bet on which teams. This is a good starting place when determining which games you want to bet on in the first place. This tool will filter by sport and display games that are happening on that current day or week (in the case of the NFL) along with the percentages of how much money is bet on each side. Games that have a large amount of money on one side means that the public is heavily backing one side, and thus the lines will likely have to move for the sportsbooks to hedge their bets. If the line moves, there is likely opportunity for you to beat the sportsbooks at their own game; anything over 1.5 points is significant.
 
 
 ### Two Game Theory
