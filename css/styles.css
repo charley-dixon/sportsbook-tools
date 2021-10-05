@@ -1,16 +1,30 @@
+@font-face {
+  font-family: "BebasNeue";
+  src: url("./../fonts/Bebas_Neue/BebasNeue-Regular.ttf") format("truetype")
+}
+
 html {
   font-family: sans-serif;
-  background-color: black;
+  background-color: #a38064;
+  min-width: 1000px;
 }
 
 h1 {
   text-align: center;
+  font-family: BebasNeue;
+  font-size: 4rem;
+  margin: 1rem;
   color: white;
+  text-shadow: 1px 1px 3px black;
+  letter-spacing: 1.5px;
 }
 
 h2 {
   text-align: center;
   margin: 0;
+  font-family: BebasNeue;
+  letter-spacing: 1px;
+  font-size: 2rem;
 }
 
 main {
@@ -18,11 +32,10 @@ main {
 }
 
 .inputs {
-  width: 30%;
+  width: 15%;
   margin-left: auto;
   padding: 2rem;
-  background-color: #e8e8e8;
-  border-radius: 30px 0 0 30px;
+  background-color: #D3D3D3;
 }
 
 .inputs > * {
@@ -49,12 +62,22 @@ label {
   margin-top: 1rem;
 }
 
+/* Buttons */
 #convert {
-  margin-top: 2rem;
-  background-color: #1b941f;
+  margin-top: 1rem;
+  background-color: #528124;
   color: white;
   border: none;
   padding: 0.5rem;
+}
+
+#reset,
+#export {
+  margin-top: 0.5rem;
+  background-color: #696969;
+  border: none;
+  padding: 0.5rem;
+  color: white;
 }
 
 #convert:hover {
@@ -62,21 +85,33 @@ label {
   background-color: #0f5411;
 }
 
+#export:hover,
+#reset:hover {
+  cursor: pointer;
+  background-color: #2F4F4F;
+}
+
 .outputs {
-  width: 50%;
+  width: 70%;
   margin-right: auto;
-  max-height: 100%;
+  height: auto;
+  background-color: white;
 }
 
 table {
   width: 100%;
+  max-height: 100%;
+  overflow-y: auto;
 }
 
 th {
-  width: 25%;
+  width: calc(100% / 6);
   padding: 0.5rem;
-  background-color: #1b941f;
+  background-color: #528124;
   color: white;
+  font-family: BebasNeue;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
 }
 
 td {
@@ -86,40 +121,10 @@ td {
 }
 
 #message {
-  color: white;
   text-align: center;
-  padding: 2rem;
-  border: 1px solid white;
+  padding: 1rem;
   width: 50%;
-  margin: 4rem auto;
-}
-
-#export {
-  width: 40%;
-  margin: 1rem auto;
-  display: block;
-  background-color: #1b941f;
-  color: white;
-  border: none;
-  padding: 0.5rem;
-}
-
-#export:hover {
-  background-color: #0f5411;
-  cursor: pointer;
-}
-
-#reset {
-  width: 40%;
-  margin: 1rem auto;
-  display: block;
-  background-color: #1b941f;
-  color: white;
-  border: none;
-  padding: 0.5rem;
-}
-
-#reset:hover {
-  background-color: #0f5411;
-  cursor: pointer;
+  margin: 8rem auto;
+  color: black;
+  background-color: #D3D3D3;
 }

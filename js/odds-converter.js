@@ -7,14 +7,16 @@ const body = document.querySelector('body');
 const outputs = document.getElementById('outputs');
 const table = document.querySelector('tbody');
 const message = document.getElementById('message');
-const resetMessage = message; // making a copy of message to reinsert when the reset functionality goes off
 const reset = document.getElementById('reset');
 let unit;
 let result;
 let winnings;
 let payout;
+let roi;
 
+// Function for submitting odds conversions
 convert.addEventListener('click', function(event) {
+  // ************ NEED TO ADD FIELD VALIDATION *************
   // check the selection fields and convert odds accordingly
   // set values for winnings & payout at the same time odds are converted
   if(oddsFrom.value === 'american' && oddsTo.value === 'decimal') {
@@ -38,9 +40,10 @@ convert.addEventListener('click', function(event) {
   // set the value for these fields upon the click
   unit = Number(betAmount.value);
   payout = winnings + unit;
+  roi = ((winnings / unit) * 100).toFixed(0) + '%';
 
   // create array of the new data entries
-  let entry = [unit.toFixed(2), result, winnings.toFixed(2), payout.toFixed(2)];
+  let entry = [unit.toFixed(2), odds.value, result, winnings.toFixed(2), payout.toFixed(2), roi];
 
   // insert row at end of table
   let newRow = table.insertRow(-1);
@@ -54,10 +57,11 @@ convert.addEventListener('click', function(event) {
 
 // reset functionality
 reset.addEventListener('click', function() {
-  outputs.appendChild(resetMessage);
+  outputs.appendChild(message);
   table.innerHTML = '';
   odds.value = '';
   betAmount.value = '';
+  betAmount.focus();
 });
 
 // function converting American to Decimal
@@ -76,4 +80,9 @@ function d2a(odds) {
   } else {
     return '+' + (100 * (odds - 1)).toFixed(0);
   }
+}
+
+// function for fractional odds to Decimal
+function f2d(odds) {
+  
 }

@@ -65,6 +65,11 @@ Filters:
 * Result of Bet (W/L/Push)
 
 
-## Lessons Learned
+## Lessons Learned & Resources
 In order to close out the feedback loop of this project it is important to keep track of the lessons learned along the way. When I make mistakes during my analysis I want to keep track of them to avoid making the same mistake twice.
-* Always pay attention to weather and injuries
+* Between 62% and 90% of product assessment is based on color alone
+  * Source: [Colors that go well with green in websites](https://colibriwp.com/blog/colors-that-go-with-green-in-websites/)
+  * I wanted to make green the main color since sports betting ultimately revolves around wealth, so I searched on Google to find the website above
+* [How to check the default sans-serif font on your OS](https://fontsarena.com/blog/operating-systems-default-sans-serif-fonts/)
+* [Rapid Tables](https://www.rapidtables.com/web/color/) is a great resource for choosing colors
+* Use camelCase for HTML class names, because you cannot use hyphens in JS selectors

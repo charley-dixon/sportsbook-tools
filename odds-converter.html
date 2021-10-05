@@ -7,25 +7,29 @@
     <script src="./js/odds-converter.js" defer></script>
   </head>
   <body>
-    <h1>Odds Conversion Center</h1>
+    <h1>Bet Analysis Center</h1>
     <main>
       <div class="inputs">
         <h2>Odds Calculator</h2>
         <label for="betAmount">Bet Amount</label>
-        <input id="betAmount" type="text" name="unit">
+        <input id="betAmount" type="text" name="unit" autofocus>
         <label for="from">Convert From</label>
         <select name="from" id="from">
           <option value="american">American</option>
           <option value="decimal">Decimal</option>
+          <option value="fractional">Fractional</option>
         </select>
         <label for="to">Convert To</label>
         <select name="to" id="to">
           <option value="decimal">Decimal</option>
           <option value="american">American</option>
+          <option value="fractional">Fractional</option>
         </select>
         <label for="odds">Odds</label>
         <input type="text" name="odds" id="odds">
         <input type="submit" id="convert" value="Submit">
+        <input type="submit" name="reset" value="Reset" id="reset">
+        <input type="submit" name="export" value="Export" id="export">
       </div>
 
       <!-- HTML table that stores results dynamically -->
@@ -33,10 +37,12 @@
         <table>
           <thead>
             <tr>
-              <th>Unit</th>
-              <th>Odds</th>
-              <th>Profit</th>
-              <th>Payout</th>
+              <th>Unit ($)</th>
+              <th>Starting Odds</th>
+              <th>Converted Odds</th>
+              <th>Profit ($)</th>
+              <th>Payout ($)</th>
+              <th>Individual ROI</th>
             </tr>
           </thead>
           <tbody>
@@ -44,12 +50,10 @@
           </tbody>
         </table>
         <div id="message">
-          <h2>Entries</h2>
-          <p>Any odds conversions that are submitted will populate this table. It may be a bit unnecessary but I wanted to build something that would allow me to practice my HTML tables. The converted odds will be in the 'Odds' column.</p>
+          <h2>Entry Table</h2>
+          <p>This table will help visualize the <em>potential</em> success of the betting criteria that are defined in the Odds Calculator.</p>
         </div>
       </div>
     </main>
-    <input type="submit" name="reset" value="Reset" id="reset">
-    <input type="submit" name="export" value="Export" id="export">
   </body>
 </html>
